@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>계획표 시간계산</title>
+    <style>
+        body h2 {
+            text-align: center;
+        }
+
+        body ul {
+            text-align: center;
+            list-style-type: none;
+        }
+
+        body ul li {
+            padding: 10px;
+        }
+
+        body img {
+            display: block;
+            margin-left: auto;
+             margin-right: auto;
+            width: 10%;
+            padding: 30px;
+        }
+    </style>
+</head>
+<body>
+    <h2>시간 퍼센트(%)변환하기</h2>
+
+    <div>
+        <img src="/imgs/time3.png">
+        <ul>
+            <li>
+                <label for="beforeTime">기준 시간(분) :</label>
+                <input type="text" id="beforeTime">
+            </li>
+            <li>
+				<label for="afterTime">변경 시간(분) :</label>
+				<input type="text" id="afterTime">
+            </li>
+            <li>
+				<button onclick="showTime()">차이 퍼센트(%)변환하기</button>
+			</li>
+        </ul>
+        <div id="showResult"></div>
+    </div>
+
+    <script>
+        function showTime() {
+            var beforeTime = document.querySelector('#beforeTime').value;
+            var afterTime = document.querySelector('#afterTime').value;
+            var difference = ((beforeTime - afterTime) / beforeTime)*100
+            var differenceInt = Math.round(difference)
+            
+            document.querySelector('#showResult').innerHTML = "이전 기준과 현재 기준의 시간 퍼센트 차이는 약"+differenceInt+"% 입니다."
+            
+        }
+
+    </script>
+
+</body>
+</html>
