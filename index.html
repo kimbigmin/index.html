@@ -25,6 +25,8 @@
             width: 10%;
             padding: 30px;
         }
+        
+        
     </style>
 </head>
 <body>
@@ -45,7 +47,7 @@
 				<button onclick="showTime()">차이 퍼센트(%)변환하기</button>
 			</li>
         </ul>
-        <div id="showResult"></div>
+        <div id="showResult" style="position:fixed; left:450px; top:500px; font-size: 25px; font-weight:bold;"></div>
     </div>
 
     <script>
@@ -55,7 +57,8 @@
             var difference = ((beforeTime - afterTime) / beforeTime)*100
             var differenceInt = Math.round(difference)
             
-            document.querySelector('#showResult').innerHTML = "이전 기준과 현재 기준의 시간 퍼센트 차이는 약"+differenceInt+"% 입니다."
+            
+            document.querySelector('#showResult').innerHTML = "이전 기준과 현재 기준의 시간 퍼센트 차이는 약 "+"<font>"+differenceInt+"</font>"+ " % 입니다."
             
         }
 
