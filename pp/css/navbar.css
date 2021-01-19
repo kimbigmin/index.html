@@ -1,0 +1,197 @@
+:root {
+  --text-color: white;
+  --background-color: black;
+  --accent-color: orange; /* var(--text-color)  이런 식으로 손 쉽게 바꾸면 된다. */ 
+}
+
+
+
+
+body {
+  margin: 0;
+  font-family: 'Noto Sans KR';
+  width: 100%;
+}
+
+/*-------------------------------header-------------------------------------*/
+
+/*드림코딩 피드백 부분*/
+a {
+  text-decoration: none;
+  color: #424242;
+} 
+
+.navbar {
+  display: flex;
+  background-color: #e1f5fe;
+  justify-content: space-between;
+  align-items: center;
+  color: #424242;
+  width:100%;
+  
+  
+
+}
+
+.logo_box {
+  display: flex;
+  flex-direction: row;
+  list-style: none;
+
+}
+
+.logo i {
+  margin-right: 15px;
+  color:#212121;
+  
+}
+
+.logo_name {
+  font-size: 25px;
+  color: #424242;
+}
+
+.nav_bar {
+  display: flex;
+  list-style: none;
+    
+}
+
+.nav_bar a:link {
+  text-decoration-line: none;
+  color:#424242;
+  
+
+}
+
+.nav_bar li:hover {
+  background-color: #ffe0b2;
+  
+  border-radius: 10%;
+  color:white;
+  
+  
+  
+}
+
+.nav_bar li {
+  padding: 10px 30px;
+
+}
+
+.side_i {
+  display: flex;
+  list-style: none;
+  padding-right: 10px;
+  
+}
+
+.side_i a {
+  padding: 8px 15px;
+}
+
+.navbar_toogleBtn {
+  display: none;
+  position: absolute;
+  right: 32px;
+  padding-top:10px;
+  font-size: 20px;
+
+}
+
+@media screen and (max-width: 768px) {
+  .navbar {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 8px 
+  }
+
+  .nav_bar {
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    padding: 0px 5px;
+  }
+
+  .nav_bar li {
+    width: 100%;
+    text-align: center;
+    padding: 10px 5px;
+  }
+
+  .logo_box {
+    margin: 0;
+    padding: 5px 10px;
+  }
+
+  .side_i {
+    display: none;
+    justify-content: center;
+    width: 100%;
+    padding: 0px;
+  }
+
+
+.navbar_toogleBtn {
+  display: block;
+  }
+
+.nav_bar.active,
+.side_i.active {
+  display: flex;
+  }
+
+}
+
+/*-------------------------------main-------------------------------------*/
+
+.sec_1 {
+  display: flex;
+  
+}
+
+.sec_1 img {
+  display: flex;
+  max-width: 1519.2px;
+  
+}
+
+
+/*-------------------------------footer-------------------------------------*/
+
+.footer {
+  display: flex;
+  width: 100%;
+  background-color: #424242;
+}
+
+.footer_box {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  margin: 0;
+  padding: 30px;
+  background-color:#e1f5fe;
+  list-style: none;
+}
+
+@media screen and (max-width: 768px) {
+  .footer_box {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 8px;
+    width: 100%;
+  }
+
+  .footer_box li {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    padding: 5px;
+  }
+
+
+
+}

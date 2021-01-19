@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flex practice</title>
+<style>
+
+    body {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        
+    }
+    header { 
+        
+        padding:10px;
+        border-bottom: 2px solid darkgray;
+    
+    }
+    .container {
+        background-color: white;
+        display: flex;
+        flex-direction: column;
+        border: 2px solid darkgray;
+        
+    }
+
+    .content {
+        display: flex;
+        
+    }
+    
+    nav {
+        border-right: 2px solid darkgray;
+        padding-right:20px;
+        font-size: 25px;
+        list-style: none;
+
+    }
+
+    main {
+        border-right: 2px solid darkgray;
+        padding: 15px;
+    }
+
+    aside {
+        text-align: center;
+        flex-basis: 150px;
+        flex-shrink: 0;
+    }
+
+    footer {
+       
+        border-top: 2px solid darkgray;
+        text-align: center;
+        padding: 15px;
+    }
+
+</style>
+
+</head>
+<body>
+  <div class="container"> 
+    <header>
+      <span class="logo"><h1>플렉스 연습 사이트</h1></span>
+    </header>  
+
+    <section class= content>
+        <nav>
+            <ul>
+                <li>1.flex</li>
+                <li>2.grid</li>
+                <li>3.float</li>
+            </ul>
+        </nav>
+        <main>외교부는 "코로나19 변이 바이러스의 국내 유입 차단을 위해 일부 국가에 대한 격리면제서 발급이 한시적으로 중단되고 있는 바 1월 14일부터 2월 7일까지 일본에 대해서도 격리면제서 발급이 일시 중단될 예정"이라고 밝혔다.
+
+            기업인 특별입국제도의 골자는 일정한 방역 절차를 거친 기업인에 대해 입국 후 격리를 면제하는 것으로 지난해 10월 8일부터 한일 양국 합의로 시행됐다.
+            
+            일본 정부는 지난달 28일부터 외국인의 신규 입국을 중단하면서도 한국과 중국 등 11개 국가·지역을 대상으로 시행 중인 기업인 특별입국절차인 '비즈니스 트랙'을 통한 입국에는 예외를 뒀다.
+            
+            한국도 변이 코로나19가 확인된 일부 국가에 대해 격리면제서 발급을 일시적으로 중단하면서도 한일관계 중요성과 기업인 수요 등을 고려해 일본에 대해서는 중단 결정을 보류해 온 것으로 알려졌다.
+            
+            일본은 애초 변이 바이러스의 지역 내 감염이 확인된 국가·지역에 대해서만 비즈니스 트랙을 중단한다는 방침이었으나, 최근 상황이 심각해져 긴급사태까지 선포한 점 등을 고려해 비즈니스 트랙을 전면 중단하기로 했다.
+            
+            스가 총리는 "국민 여러분의 목숨과 삶을 지키고 온갖 위험을 예방적으로 제거</main>
+        <aside>ad</aside>
+    </section>
+
+    <footer>
+        <a href ="#">홈페이지</a>
+    </footer>
+  </div>  
+</body>
+</html>
